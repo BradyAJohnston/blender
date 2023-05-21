@@ -33,7 +33,7 @@ jobs:
         env:
           cache-name: ${{ github.ref }}-${{ runner.os }}
         with:
-          path: ${{ env._MAIN_DIR }}
+          path: .
           key: build-cache-${{ env.cache-name }}
             
       - uses: actions/checkout@v2
